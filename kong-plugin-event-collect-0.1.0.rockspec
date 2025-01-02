@@ -10,10 +10,14 @@ package = package_name
 version = package_version .. "-" .. rockspec_revision
 supported_platforms = { "linux", "macosx" }
 
+source = {
+  url = "git@github.com:wangsir-mini/kafka-plugin.git",
+}
 
 description = {
   summary = "Kong is a scalable and customizable API Management Layer built on top of Nginx.",
   license = "Apache 2.0",
+  homepage = "[https://github.com/wangsir-mini/kafka-plugin](https://github.com/wangsir-mini/kafka-plugin)", license = "MIT",
 }
 
 
