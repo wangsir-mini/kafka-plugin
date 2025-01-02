@@ -14,7 +14,7 @@ function EventCollectHandler:access(conf)
         { host = conf.kafka.host, port = conf.kafka.port },
     }
     -- 强制读取请求体
-    kong.request.set_body_reader(kong.request.get_raw_body)
+    -- kong.request.set_body_reader(kong.request.get_raw_body)
 
     -- 检查请求方法是否为 POST
     if kong.request.get_method() == "POST" then
